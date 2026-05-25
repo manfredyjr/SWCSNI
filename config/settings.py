@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'ninos',
     'evaluaciones',
     'seguimientos',
+    'usuarios',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,5 @@ import os
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+LOGIN_URL = '/'
